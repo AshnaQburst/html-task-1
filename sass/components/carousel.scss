@@ -1,0 +1,26 @@
+#owlCarousel{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    @include relative();
+    .owl-stage-outer{
+        .owl-stage{
+            .owl-item{
+                background: #ffffff;
+            }
+        }
+    }
+    .owl-nav{ 
+        display: block !important;
+        button{
+            @include absolute();
+            top: 45%;
+            font-size: 45px;
+        }
+        .owl-prev{ left: 0px;}
+        .owl-next{ right: 0px;}
+    }
+    @media (max-width: $screen-small-max) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

@@ -1,0 +1,37 @@
+// displays
+@mixin block() {display: block;}
+@mixin dib() { display: inline-block;}
+@mixin flex() { display: flex;}
+
+// center the contents
+@mixin horizontal-center() {
+    left: 50%;
+    transform: translateX(-50%);
+}
+@mixin vertical-center() {
+    top: 50%;
+    transform: translateY(-50%);
+}
+@mixin center() {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@mixin text-center() { text-align: center;}
+
+@mixin background-grey() { background: #f3f5f7;}
+@mixin text-light() { color: #aba8a8;}
+@mixin bold(){ font-weight: bold;}
+
+// positions
+@mixin relative() { position: relative;}
+@mixin absolute() { position: absolute;}
+
+// height and width
+@mixin full-height() { height: 100%;}
+@mixin full-width() { width: 100%;}
+
+@mixin margin-vertical-auto() {
+    margin-left: auto;
+    margin-right: auto;
+}

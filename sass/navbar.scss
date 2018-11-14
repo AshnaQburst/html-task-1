@@ -1,0 +1,141 @@
+.navbar-wrapper-primary{
+    @include full-width();
+    border-bottom: 1.5px solid #efebeb;
+    min-height: 55px;
+}
+.navbar-wrapper-secondary{
+    @include full-width();
+    @include flex();
+    border-bottom: 1.5px solid #ccc !important;
+    min-height: 35px;
+    @media (max-width:$screen-small-max) {
+        position : relative;
+        min-height: 0px;
+        padding: 0px;
+        margin: 0px;
+        border: none !important;
+    }
+}
+.navbar{
+    border-radius: 0px;
+    margin-bottom: 0px;
+    width: 1000px;
+    margin: 0 auto;
+    .navbar-header{
+        float: left;
+        padding:15px 0px;
+        .navbar-brand{
+            padding: 12px 0px;
+            .logo{
+                height: 25px;
+            }
+        }
+        @media (max-width: $screen-small-max) {  padding-left: 45px;}
+    }
+    .navbar-collapse{
+        display: block;
+        float: right;
+        ul{
+            margin: 0;
+            padding: 0;
+            li{
+                list-style: none;
+                display: inline-block;
+                padding: 6px 10px;
+                a{
+                    text-decoration: none;
+                    font-size: 14px;
+                }
+                &:last-child{
+                    padding-right: 0px;
+                }
+            }
+        }
+        @media (max-width:$screen-small-max){ padding-right: 15px;}
+    }
+    .navbar-right{
+        li{
+            a{
+                color: #000;
+                font-size: 12px;
+            }
+        }
+    }
+    @media (max-width: $screen-medium-max) { width: 600px;}
+    @media (max-width: $screen-small-max) { width: 100%;}
+
+}
+.secondary-nav{
+    min-height: 30px;
+    overflow: hidden;
+    .navbar-nav{
+        margin: 0;
+        padding: 0;
+        li{
+            display: inline-block;
+            padding: 7px 70px 7px 0px;
+            list-style: none;
+            a{
+                
+                color: black;
+                font-size: 12px;
+                text-decoration: none;
+                cursor: pointer;
+                &:hover{ background: none;}
+            }   
+            @media (max-width: $screen-medium-max) {padding: 7px 40px 7px 0px;}
+            @media (max-width: $screen-small-max) {  
+                padding: 7px 20px 7px 0px;
+                display: block;
+            }
+        }
+        .dropdown{
+            .dropdown-menu{
+                display: none;
+                @include absolute();
+                top: 85px;
+                background: #eae8e8;
+                padding: 0;
+                li{
+                    display: block;
+                    padding:7px 0;
+                    a{
+                        text-decoration: none;
+                        padding: 10px 70px 10px 20px;
+                        &:hover{ background: #ccc;}
+                    }
+                }
+                @media (max-width: $screen-small-max) {
+                    position: relative;
+                    top: 0px;
+                }
+            }
+            &:hover{
+                .dropdown-menu{
+                    display: block;
+                }
+            }
+        }
+    }
+    
+    @media (max-width: $screen-small-max) { 
+        display: none;
+        padding-left: 10px;
+        position: absolute;
+        background: white;
+        border-bottom: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+}
+.icon{
+    display: none;
+    @media (max-width: $screen-small-max) {
+        display: block;
+        position: absolute;
+        top: -44px;
+        font-size: 25px;
+        text-decoration: none;
+        color: black;
+        left: 10px;
+    }
+}
