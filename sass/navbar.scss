@@ -92,8 +92,8 @@
         .dropdown{
             .dropdown-menu{
                 display: none;
-                @include absolute();
-                top: 85px;
+                @include absolute(85px, inherit, inherit, inherit);
+                // top: 85px;
                 background: #eae8e8;
                 padding: 0;
                 li{
@@ -103,6 +103,12 @@
                         text-decoration: none;
                         padding: 10px 70px 10px 20px;
                         &:hover{ background: #ccc;}
+                        @media (max-width:$screen-small-max) {
+                            @include full-width();
+                            display: inline-block;
+                            box-sizing: border-box;
+                            padding: 0px 20px;
+                        }
                     }
                 }
                 @media (max-width: $screen-small-max) {

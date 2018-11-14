@@ -33,18 +33,22 @@
         <nav class="navbar secondary-nav" id="secondaryNav">
             <div class="container-fluid">
                 <ul class="nav navbar-nav">
-                    <li class="dropdown">
+                    <li>
+                        <div class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown">Inbox
-                        <span class="caret"></span></a>
+                            <span class="caret"></span>
+                        </a>
                         <ul class="dropdown-menu">
                           <li><a href="#">submenu 1</a></li>
                           <li><a href="#">submenu 2</a></li>
                           <li><a href="#">submenu 3</a></li> 
                         </ul>
+                    </div>
                     </li>
                     <li> <a href=""> Bundles </a> </li>
                     <li> <a href=""> Highlights </a> </li>
-                    <li  class="dropdown">
+                    <li>
+                        <div class="dropdown">
                          <a class="dropdown-toggle" data-toggle="dropdown"> Reminders 
                          <span class="caret"></span></a> 
                          <ul class="dropdown-menu">
@@ -52,7 +56,8 @@
                                 <li><a href="#">submenu 2</a></li>
                                 <li><a href="#">submenu 3</a></li>
                          </ul>
-                        </li>
+                        </div>
+                    </li>
                     <li> <a href=""> Snooze </a> </li>
                     <li> <a href=""> Get Inbox </a> </li>
                 </ul>
@@ -102,70 +107,64 @@
             <!-- end of thumbnail section -->
             <!-- cart section -->
            
-            <div id="owlCarousel">
-                <div class="owl-carousel cart-section">
-                    <div> 
+            <div id="owlCarousel" class="owl-carousel cart-section">
                         <section class="slide-section">
-                            <div class="cart-img-holder">
+                            <figure class="cart-img-holder">
                                 <img src="../assets/images/cart-1.jpg" alt="">
-                            </div>
+                            </figure>
                             <h5 class=" cart-title"> Purus Ultiecies</h5>
                             <span class="cart-price"> $225 </span>
                             <button class="btn btn-primary btn-cart btn-flex"> ADD TO CART </button>
                         </section>
-                    </div>
-                    <div> 
+                    
                         <section class="slide-section">
-                            <div class="cart-img-holder">
+                            <figure class="cart-img-holder">
                                 <img src="../assets/images/cart-2.jpg" alt="">
-                            </div>
+                            </figure>
                             <h5 class=" cart-title"> Purus Ultiecies</h5>
                             <span class="cart-price"> $225 </span>
                             <button class="btn btn-primary btn-cart btn-flex"> ADD TO CART </button>
                         </section>
-                    </div>
-                    <div>
+                    
+                    
                         <section class="slide-section">
-                            <div class="cart-img-holder">
+                            <figure class="cart-img-holder">
                                 <img src="../assets/images/cart-3.jpg" alt="">
-                            </div>
+                            </figure>
                             <h5 class=" cart-title"> Purus Ultiecies</h5>
                             <span class="cart-price"> $225 </span>
                             <button class="btn btn-primary btn-cart btn-flex"> ADD TO CART </button>
                         </section>
-                    </div>
-                    <div> 
+                    
+                    
                         <section class="slide-section">
-                            <div class="cart-img-holder">
+                            <figure class="cart-img-holder">
                                 <img src="../assets/images/cart-2.jpg" alt="">
-                            </div>
+                            </figure>
                             <h5 class=" cart-title"> Purus Ultiecies</h5>
                             <span class="cart-price"> $225 </span>
                             <button class="btn btn-primary btn-cart btn-flex"> ADD TO CART </button>
                         </section>
-                    </div>
-                    <div>
+                    
+                    
                         <section class="slide-section">
-                            <div class="cart-img-holder">
+                            <figure class="cart-img-holder">
                                 <img src="../assets/images/cart-3.jpg" alt="">
-                            </div>
+                            </figure>
                             <h5 class=" cart-title"> Purus Ultiecies</h5>
                             <span class="cart-price"> $225 </span>
                             <button class="btn btn-primary btn-cart btn-flex"> ADD TO CART </button>
                         </section>
-                    </div>
-                    <div>
+                    
                         <section class="slide-section">
-                            <div class="cart-img-holder">
+                            <figure class="cart-img-holder">
                                 <img src="../assets/images/cart-1.jpg" alt="">
-                            </div>
+                            </figure>
                             <h5 class=" cart-title"> Purus Ultiecies</h5>
                             <span class="cart-price"> $225 </span>
                             <button class="btn btn-primary btn-cart btn-flex"> ADD TO CART </button>
                         </section>  
-                    </div>
                     
-                </div>
             </div>
            
             <!-- end of cart section -->
@@ -200,13 +199,11 @@
         <!-- end of extended cart section -->
         <div class="content-wrapper feeback-wrapper">
             <section class="thumbnail-section ">
-                <form action="" name="feeback">
-                    <div class="feedback-form">
+                <form action="" name="feeback" class="feedback-form">
                         <input type="text" name="name" class="block input-box" placeholder="Name">
                         <input type="email" name="email" class="block input-box" placeholder="Email">
                         <textarea cols="30" rows="5" name="message" class="input-box" placeholder="Message"> </textarea>
                         <button class="btn btn-primary btn-cart" type="submit"> SEND </button>
-                    </div>
                 </form>
             </section>
             <section class="thumbnail-section">

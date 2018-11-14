@@ -25,7 +25,13 @@
 
 // positions
 @mixin relative() { position: relative;}
-@mixin absolute() { position: absolute;}
+@mixin absolute($top: inherit, $bottom: inherit, $left: inherit, $right: inherit) { 
+    position: absolute;
+    top: $top;
+    bottom: $bottom;
+    left: $left;
+    right: $right;
+}
 
 // height and width
 @mixin full-height() { height: 100%;}

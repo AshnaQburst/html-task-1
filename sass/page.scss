@@ -15,7 +15,7 @@ body{
     }
 }
 .thumbnail-section{ 
-    @include flex();
+    // @include flex();
     width: 500px;
     flex-wrap: wrap;
     .address-section{
@@ -136,6 +136,7 @@ body{
         .cart-img-holder{
             height: 225px;
             @include full-width();
+            margin: 0px;
             img{
                 @include relative();
                 @include full-height();
@@ -178,7 +179,7 @@ body{
         @media (max-width: $screen-medium-max) { width: 80%;}
         @media (max-width: $screen-small-max) { width: 93%;}
     }
-    textarea{ resize: none;margin-bottom: 30px !important;}
+    textarea{ resize: none;margin-bottom: 30px;}
     .address-txt{
             font-size: 12px;
             margin-bottom: 0px;
@@ -286,7 +287,7 @@ body{
         div{
             &:first-child{
                 @include vertical-center();
-                @include absolute();
+                @include absolute(50%, inherit, inherit, inherit);
             }
         }
     }
@@ -295,7 +296,7 @@ body{
     }
     @media (max-width: $screen-small-max) {
         .thumbnail-section{
-            margin-left: 0px !important;
+            margin-left: 0px;
         }  
         p,h4{ padding-left: 30px; }
         button{ margin-left: 30px;}

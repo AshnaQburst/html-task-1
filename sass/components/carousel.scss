@@ -12,8 +12,8 @@
     .owl-nav{ 
         display: block !important;
         button{
-            @include absolute();
-            top: 45%;
+            @include absolute(45%, inherit, inherit, inherit);
+            // top: 45%;
             font-size: 45px;
         }
         .owl-prev{ left: 0px;}

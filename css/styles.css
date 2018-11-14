@@ -32,6 +32,9 @@
   color: #fff;
   position: absolute;
   top: 50%;
+  bottom: inherit;
+  left: inherit;
+  right: inherit;
   cursor: pointer; }
   .cart-button:active, .cart-button:hover, .cart-button:focus {
     outline: none; }
@@ -62,6 +65,9 @@
     #owlCarousel .owl-nav button {
       position: absolute;
       top: 45%;
+      bottom: inherit;
+      left: inherit;
+      right: inherit;
       font-size: 45px; }
     #owlCarousel .owl-nav .owl-prev {
       left: 0px; }
@@ -161,6 +167,9 @@
       display: none;
       position: absolute;
       top: 85px;
+      bottom: inherit;
+      left: inherit;
+      right: inherit;
       background: #eae8e8;
       padding: 0; }
       .secondary-nav .navbar-nav .dropdown .dropdown-menu li {
@@ -171,6 +180,12 @@
           padding: 10px 70px 10px 20px; }
           .secondary-nav .navbar-nav .dropdown .dropdown-menu li a:hover {
             background: #ccc; }
+          @media (max-width: 767px) {
+            .secondary-nav .navbar-nav .dropdown .dropdown-menu li a {
+              width: 100%;
+              display: inline-block;
+              box-sizing: border-box;
+              padding: 0px 20px; } }
       @media (max-width: 767px) {
         .secondary-nav .navbar-nav .dropdown .dropdown-menu {
           position: relative;
@@ -215,7 +230,6 @@ body {
       padding-left: 15px; } }
 
 .thumbnail-section {
-  display: flex;
   width: 500px;
   flex-wrap: wrap; }
   .thumbnail-section .address-section:first-child {
@@ -325,7 +339,8 @@ body {
     position: relative; }
     .content-wrapper .cart-section .cart-img-holder {
       height: 225px;
-      width: 100%; }
+      width: 100%;
+      margin: 0px; }
       .content-wrapper .cart-section .cart-img-holder img {
         position: relative;
         height: 100%;
@@ -369,7 +384,7 @@ body {
         width: 93%; } }
   .content-wrapper textarea {
     resize: none;
-    margin-bottom: 30px !important; }
+    margin-bottom: 30px; }
   .content-wrapper .address-txt {
     font-size: 12px;
     margin-bottom: 0px; }
@@ -470,13 +485,17 @@ body {
     .big-cart .thumbnail-section div:first-child {
       top: 50%;
       transform: translateY(-50%);
-      position: absolute; }
+      position: absolute;
+      top: 50%;
+      bottom: inherit;
+      left: inherit;
+      right: inherit; }
   @media (max-width: 1024px) {
     .big-cart {
       background-position: 57% 0%; } }
   @media (max-width: 767px) {
     .big-cart .thumbnail-section {
-      margin-left: 0px !important; }
+      margin-left: 0px; }
     .big-cart p, .big-cart h4 {
       padding-left: 30px; }
     .big-cart button {

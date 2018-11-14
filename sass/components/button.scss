@@ -34,8 +34,8 @@
     border: 1px solid #ccc;
     background: #000;
     color: #fff;
-    @include absolute();
-    top: 50%;
+    @include absolute(50%, inherit, inherit, inherit);
+    // top: 50%;
     cursor: pointer;
     &:active,&:hover,&:focus{
         outline: none;
